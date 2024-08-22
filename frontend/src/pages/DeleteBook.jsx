@@ -32,7 +32,7 @@ const DeleteBook = () => {
 
     setLoading(true)
 
-    axios.delete(`https://fullstackbookstore-backned.onrender.com/${id}`)
+    axios.delete(`https://fullstackbookstore-backned.onrender.com/books/${id}`)
     .then(()=>{
       setLoading(false)
       navigate('/')
