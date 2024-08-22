@@ -19,7 +19,7 @@ const ShowBook = () => {
 
   useEffect(()=>{
 
-    axios.get(`http://localhost:5000/books/${id}`)
+    axios.get(`https://fullstackbookstore-backned.onrender.com/books/${id}`)
     .then(response=>{
       setBook(response.data);
       setLoading(false)
