@@ -52,7 +52,7 @@ const EditBook = () => {
       publishYear
     }
 
-    axios.put(`https://fullstackbookstore-backned.onrender.com/${id}`,data)
+    axios.put(`https://fullstackbookstore-backned.onrender.com/books/${id}`,data)
     .then(()=>{
       console.log("book updated sucessfully")
       navigate('/')
