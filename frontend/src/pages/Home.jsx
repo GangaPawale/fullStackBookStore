@@ -16,7 +16,7 @@ const Home = () => {
     setIsLoading(true);
 
 
-    axios.get('https://fullstackbookstore-backned.onrender.com')
+    axios.get('https://fullstackbookstore-backned.onrender.com/books')
       .then(response => {
         console.log("API response:", response.data);
         setBooks(response.data);
